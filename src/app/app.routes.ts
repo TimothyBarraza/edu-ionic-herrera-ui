@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'inicio',
     pathMatch: 'full',
   },
+  {
+    path: 'alert',
+    loadComponent: () => import('./pages/alert/alert.page').then( m => m.AlertPage)
+  },
 ];

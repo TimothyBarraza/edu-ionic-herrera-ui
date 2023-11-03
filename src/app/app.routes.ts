@@ -14,4 +14,8 @@ export const routes: Routes = [
     path: 'alert',
     loadComponent: () => import('./pages/alert/alert.page').then( m => m.AlertPage)
   },
+  {
+    path: 'action-sheet',
+    loadComponent: () => import('./pages/action-sheet/action-sheet.page').then( m => m.ActionSheetPage)
+  },
 ];
